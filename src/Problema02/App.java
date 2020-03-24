@@ -6,8 +6,6 @@ public class App {
 		// TODO Auto-generated method stub
 		Temperatura dia1 = new Temperatura(30.0,Escala.CELCIUS);
 		Temperatura dia2 = new Temperatura(55.0,Escala.FAHRENHEIT);
-		System.out.println(dia1.toString());
-		System.out.println(dia2.toString());
 		System.out.println("T1 en C°: "+dia1.asCelcius());
 		System.out.println("T1 en F°: "+dia1.asFahrenheit());
 		System.out.println("T2 en C°: "+dia2.asCelcius());
