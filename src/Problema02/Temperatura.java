@@ -29,7 +29,9 @@ public class Temperatura {
 		}
 		
 	}
-	public double getGrados() {return this.grados;}
+	public double getGrados() {
+		return this.grados;
+	}
 	/**
 	 * Devuelve un string con la temperatura, formateada
 	 */
@@ -37,10 +39,10 @@ public class Temperatura {
 		String temp;
 		switch(this.escala) {
 		case FAHRENHEIT:
-			temp = this.grados+" F°";
+			temp = this.grados+"ºF";
 			break;
 		case CELCIUS:
-			temp = this.grados+" C°";
+			temp = this.grados+"ºC";
 			break;
 		default: temp = "Error";
 		}
@@ -74,7 +76,7 @@ public class Temperatura {
 			return this.grados;
 			
 		case CELCIUS:
-			grados = this.grados * ((double)9/5) + 32;			
+			grados = this.grados * ((double)9/5) + 32;
 			break;
 		default: grados = -1;
 		}
